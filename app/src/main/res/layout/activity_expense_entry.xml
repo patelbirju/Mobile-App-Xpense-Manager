@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+
+    tools:context="com.example.birju_000.xpensemanager.expense_entry">
+
+    <!--category label-->
+    <TextView
+        android:id="@+id/categoryLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/categoryLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--category spinner-->
+    <Spinner
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/categoryLabel"
+        android:layout_toRightOf="@id/categoryLabel"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center">
+    </Spinner>
+
+    <!--amount label-->
+    <TextView
+        android:id="@+id/amountLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/categoryLabel"
+        android:layout_below="@id/categoryLabel"
+        android:padding="10dp"
+        android:text="@string/amountLabel"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--amount EditText-->
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:text="@string/amount"
+        android:textSize="20sp"
+        android:layout_below="@+id/categoryLabel"
+        android:layout_alignLeft="@+id/categories"
+        android:layout_alignStart="@+id/categories"
+        android:layout_marginStart="12dp" />
+
+
+</RelativeLayout>

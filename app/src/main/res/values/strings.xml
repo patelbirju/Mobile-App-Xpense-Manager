@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Xpense Manager</string>
+    <string name="categoryLabel">Category</string>
+    <string name="amountLabel">Amount</string>
+    <string name="amount" />
+    <string name="firstName">First Name</string>
+    <string-array name="categories">
+        <item>Snacks</item>
+        <item>Grocery</item>
+        <item>Maintenance</item>
+        <item>Entertainment</item>
+        <item>Medical</item>
+        <item>Other</item>
+    </string-array>
+</resources>
